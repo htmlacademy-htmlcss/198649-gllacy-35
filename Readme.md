@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Оксана Турянська](https://up.htmlacademy.ru/htmlcss/35/user/198649).
-* Наставник: `Константин Антонов`.(https://htmlacademy.ru/profile/rawle51)
+* Наставник: [Константин Антонов].(https://htmlacademy.ru/profile/rawle51).
 
 ---
 
