@@ -89,7 +89,7 @@
                       <p class="basket-item_text">1 кг х 310 ₽</p>
                     </div>
                     <p class="basket-item_price">310 ₽</p>
-                    <p class="basket-item_button-delete">x</p>
+                    <button class="basket-item_button-delete" type="reset">x</button>
                   </li>
   
                   <li class="pop-up_basket-item">
@@ -99,7 +99,7 @@
                       <p class="basket-item_text">1,5 кг х 320 ₽</p>
                     </div>
                     <p class="basket-item_price">480 ₽</p>
-                    <p class="basket-item_button-delete">x</p>
+                    <button class="basket-item_button-delete" type="reset">x</button>
                   </li>
                 </ul>
   
@@ -119,21 +119,19 @@
 
     <main class="main-content">
         
-        <div class="breadcrumbs">
-            <ul class="breadcrumbs_list">
-                <li class="breadcrumbs_item">
-                    <a class="breadcrumbs_main" href="index.html">Главная</a>
-                </li>
+        <ul class="breadcrumbs_list">
+            <li class="breadcrumbs_item">
+                <a class="breadcrumbs_main" href="index.html">Главная</a>
+            </li>
 
-                <li class="breadcrumbs_item">
-                    <a class="breadcrumbs_catalog" href="#">Каталог</a>
-                </li>
+            <li class="breadcrumbs_item">
+                <a class="breadcrumbs_catalog" href="#">Каталог</a>
+            </li>
                 
-                <li class="breadcrumbs_item">
-                    <a class="breadcrumbs_catalog-creamy" href="catalog.html">Сливочное мороженое</a>
-                </li>                
-            </ul>
-        </div>
+            <li class="breadcrumbs_item">
+                <a class="breadcrumbs_catalog-creamy" href="catalog.html">Сливочное мороженое</a>
+            </li>                
+        </ul>
 
         <h1 class="creamy_ice-cream">Сливочное мороженое</h1>
 
@@ -141,14 +139,22 @@
             <fieldset class="form_catalog-sort">
                 <label for="sort-field">Сортировка:</label>
                 <input class="sort-by-famous" type="text" list="sort-by" name="sort-field" id="sort-field" value="по популярности">
-                <datalist id="sort-by">
+                <select id="sort-by">
                     <option value="по популярности"></option>
-                </datalist>
+                </select>
             </fieldset>
             
             <fieldset class="form_catalog-range-price">
                 <label for="range-price">Цена: 100 ₽ – 500 ₽</label>
-                <input class="range-price" type="range" min="1" max="1000" step="50" id="range-price" name="range-price">
+                <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0"></div>
+                      <div class="toggle toggle-max" tabindex="0"></div>
+                    </div>
+                  </div>
             </fieldset>
 
             <fieldset class="form_catalog-fat-content">
@@ -192,7 +198,7 @@
             <ul class="products_list">
                 <li class="products_item">
                   <div class="products_item-block">
-                    <img class="products_item-foto" src="./img/scoop_raspberry.png">
+                    <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_raspberry.png"></a>
                     <h4 class="products_item-title"><a class="products_item-link" href="#">Малинка</a></h4>
                     <p class="products_item-text">Сливочное мороженое с малиновым джемом</p>
                     <div class="products_item-price-block">
@@ -209,7 +215,7 @@
       
                 <li class="products_item">
                   <div class="products_item-block">
-                    <img class="products_item-foto" src="./img/scoop_pistachio.png">
+                    <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_pistachio.png"></a>
                     <h4 class="products_item-title"><a class="products_item-link" href="#">Фисташка</a></h4>
                     <p class="products_item-text">Фисташковый пломбир с кусочками шоколада</p>
                     <div class="products_item-price-block">
@@ -226,7 +232,7 @@
       
                 <li class="products_item">
                   <div class="products_item-block">
-                    <img class="products_item-foto" src="./img/scoop_blueberry.png">
+                    <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_blueberry.png"></a>
                     <h4 class="products_item-title"><a class="products_item-link" href="#">Черника</a></h4>
                     <p class="products_item-text">Крем-брюле с черничным джемом</p>
                     <div class="products_item-price-block">
@@ -243,7 +249,7 @@
       
                 <li class="products_item">
                   <div class="products_item-block">
-                    <img class="products_item-foto" src="./img/scoop_bubblegum.png">
+                    <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_bubblegum.png"></a>
                     <h4 class="products_item-title"><a class="products_item-link" href="#">Бабл-гам</a></h4>
                     <p class="products_item-text">Ванильный пломбир со сладкой посыпкой</p>
                     <div class="products_item-price-block">
@@ -260,7 +266,7 @@
 
                 <li class="products_item">
                     <div class="products_item-block">
-                        <img class="products_item-foto" src="./img/scoop_blackberry.png">
+                        <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_blackberry.png"></a>
                         <h4 class="products_item-title"><a class="products_item-link" href="#">Ежевика</a></h4>
                         <p class="products_item-text">Сливочное мороженое с ежевичным джемом</p>
                         <div class="products_item-price-block">
@@ -277,7 +283,7 @@
 
                 <li class="products_item">
                     <div class="products_item-block">
-                        <img class="products_item-foto" src="./img/scoop_banana.png">
+                        <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_banana.png"></a>
                         <h4 class="products_item-title"><a class="products_item-link" href="#">Банан</a></h4>
                         <p class="products_item-text">Сливочный пломбир
                             с банановым вкусом</p>
@@ -295,7 +301,7 @@
 
                 <li class="products_item">
                     <div class="products_item-block">
-                        <img class="products_item-foto" src="./img/scoop_chocolate.png">
+                        <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_chocolate.png"></a>
                         <h4 class="products_item-title"><a class="products_item-link" href="#">Шоколадка</a></h4>
                         <p class="products_item-text">Классический шоколадный пломбир</p>
                         <div class="products_item-price-block">
@@ -312,7 +318,7 @@
 
                 <li class="products_item">
                     <div class="products_item-block">
-                        <img class="products_item-foto" src="./img/scoop_strawberry.png">
+                        <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_strawberry.png"></a>
                         <h4 class="products_item-title"><a class="products_item-link" href="#">Клубничка</a></h4>
                         <p class="products_item-text">Сливочный пломбир
                             с клубничным вкусом</p>
@@ -330,7 +336,7 @@
 
                 <li class="products_item">
                     <div class="products_item-block">
-                        <img class="products_item-foto" src="./img/scoop_limon.png">
+                        <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_limon.png"></a>
                         <h4 class="products_item-title"><a class="products_item-link" href="#">Лимон</a></h4>
                         <p class="products_item-text">Освежающий лимонный сорбет</p>
                         <div class="products_item-price-block">
@@ -347,7 +353,7 @@
 
                 <li class="products_item">
                     <div class="products_item-block">
-                        <img class="products_item-foto" src="./img/scoop_mint.png">
+                        <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_mint.png"></a>
                         <h4 class="products_item-title"><a class="products_item-link" href="#">Ментол</a></h4>
                         <p class="products_item-text">Сливочный пломбир
                             с ментоловым сиропом</p>
@@ -365,7 +371,7 @@
 
                 <li class="products_item">
                     <div class="products_item-block">
-                        <img class="products_item-foto" src="./img/scoop_nut.png">
+                        <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_nut.png"></a>
                         <h4 class="products_item-title"><a class="products_item-link" href="#">Орешек</a></h4>
                         <p class="products_item-text">Фисташковый пломбир с шоколадным сиропом</p>
                         <div class="products_item-price-block">
@@ -382,7 +388,7 @@
 
                 <li class="products_item">
                     <div class="products_item-block">
-                        <img class="products_item-foto" src="./img/scoop_cream-briule.png">
+                        <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_cream-briule.png"></a>
                         <h4 class="products_item-title"><a class="products_item-link" href="#">Крем-брюле</a></h4>
                         <p class="products_item-text">Классическое крем-брюле </p>
                         <div class="products_item-price-block">
@@ -399,18 +405,18 @@
               </ul>
         </section>
 
-        <section class="catalog_navigation">
+        <div class="catalog_navigation">
 
             <button class="catalog_navigation-button">Показать еще</button>
             <ul class="catalog_navigation-list">
-                <li class="catalog_navigation-item"></li>
-                <li class="catalog_navigation-item"></li>
-                <li class="catalog_navigation-item"></li>
-                <li class="catalog_navigation-item"></li>
-                <li class="catalog_navigation-item"></li>
+                <li class="catalog_navigation-item">1</li>
+                <li class="catalog_navigation-item">2</li>
+                <li class="catalog_navigation-item">3</li>
+                <li class="catalog_navigation-item">4</li>
+                <li class="catalog_navigation-item">5</li>
             </ul>
 
-        </section>
+        </div>
 
     </main>
     
@@ -447,9 +453,11 @@
         <ul class="footer-links_list">
           <li class="footer-links_item">
             <a  class="footer_link-for-distributor" href="#">
+              <!--fotter heart
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.8909 2.99447C13.5504 2.65381 13.1461 2.38357 12.7011 2.19919C12.2562 2.01482 11.7792 1.91992 11.2976 1.91992C10.8159 1.91992 10.339 2.01482 9.89399 2.19919C9.44901 2.38357 9.04473 2.65381 8.70422 2.99447L7.99756 3.70114L7.29089 2.99447C6.6031 2.30668 5.67025 1.92028 4.69756 1.92028C3.72487 1.92028 2.79202 2.30668 2.10422 2.99447C1.41643 3.68227 1.03003 4.61512 1.03003 5.58781C1.03003 6.56049 1.41643 7.49334 2.10422 8.18114L2.81089 8.88781L7.99756 14.0745L13.1842 8.88781L13.8909 8.18114C14.2316 7.84064 14.5018 7.43635 14.6862 6.99138C14.8705 6.5464 14.9654 6.06946 14.9654 5.58781C14.9654 5.10615 14.8705 4.62921 14.6862 4.18424C14.5018 3.73926 14.2316 3.33498 13.8909 2.99447Z" fill="#2D3440"/>
               </svg>
+              -->
                 Для поставщиков            
               </a>
           </li>
