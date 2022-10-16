@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+	<link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -83,7 +84,7 @@
               <h3 class="pop-up_basket-title">Корзина</h3>
               <ul class="pop-up_basket-list">
                 <li class="pop-up_basket-item">
-                  <img class="basket-item_image" src="./img/scoop_raspberry_basket.png" alt="foto scoop of ice-cream">
+                  <img class="basket-item_image" src="./img/scoop_raspberry_basket.png" width="46" height="46" alt="foto scoop of ice-cream">
                   <div class="basket-item_information">
                     <h4 class="basket-item_title">Малинка</h4>
                     <p class="basket-item_text">1 кг х 310 ₽</p>
@@ -93,7 +94,7 @@
                 </li>
 
                 <li class="pop-up_basket-item">
-                  <img class="basket-item_image" src="./img/scoop_bubblegum_basket.png" alt="foto scoop of ice-cream">
+                  <img class="basket-item_image" src="./img/scoop_bubblegum_basket.png" width="46" height="46" alt="foto scoop of ice-cream">
                   <div class="basket-item_information">
                     <h4 class="basket-item_title">Бабл-гам</h4>
                     <p class="basket-item_text">1,5 кг х 320 ₽</p>
@@ -314,14 +315,20 @@
       <section class="shares">
         <p class="shares_motivation">Заказывайте мороженое и получайте подарки!</p>
         <div class="block_raspberry">
-          <h3 class="block_raspberry-title">Малинка даром!</h3>
-          <p class="block_raspberry-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="block_raspberry-link" href="#">Хочу подарок</a>
+			<div class="block_raspberry-right-layout">
+            	<h3 class="block_raspberry-title">Малинка даром!</h3>
+            	<p class="block_raspberry-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            	<a class="block_raspberry-link" href="#">Хочу подарок</a>
+			</div>
+		    <img class="block_raspberry-image" src="./img/raspberry.png" width="219" height="268" alt="foto raspberry">
         </div>
         <div class="block_marshmello">
-          <h3 class="block_marshmello-title">Маршмеллоу даром!</h3>
-          <p class="block_marshmello-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежныхзефирок совершенно бесплатно.</p>
-          <a class="block_marshmello-link" href="#">Хочу подарок</a>
+			<div class="block_marshmello-right-layout">
+            	<h3 class="block_marshmello-title">Маршмеллоу даром!</h3>
+            	<p class="block_marshmello-text">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежныхзефирок совершенно бесплатно.</p>
+            	<a class="block_marshmello-link" href="#">Хочу подарок</a>
+			</div>
+			<img class="block_marshmello-image" src="./img/marshmello.png" width="219" height="268" alt="foto marshmello">
         </div>
       </section>
 
@@ -332,7 +339,7 @@
         <ul class="products_list">
           <li class="products_item">
             <div class="products_item-block">
-              <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_raspberry.png"></a>
+              <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_raspberry.png" width="168" height="168" alt="scoop raspberry"></a>
               <h4 class="products_item-title"><a class="products_item-link" href="#">Малинка</a></h4>
               <p class="products_item-text">Сливочное мороженое с малиновым джемом</p>
               <div class="products_item-price-block">
@@ -349,7 +356,7 @@
 
           <li class="products_item">
             <div class="products_item-block">
-              <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_pistachio.png"></a>
+              <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_pistachio.png" width="168" height="168" alt="scoop pistachio"></a>
               <h4 class="products_item-title"><a class="products_item-link" href="#">Фисташка</a></h4>
               <p class="products_item-text">Фисташковый пломбир с кусочками шоколада</p>
               <div class="products_item-price-block">
@@ -366,7 +373,7 @@
 
           <li class="products_item">
             <div class="products_item-block">
-              <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_blueberry.png"></a>
+              <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_blueberry.png" width="168" height="168" alt="scoop blueberry"></a>
               <h4 class="products_item-title"><a class="products_item-link" href="#">Черника</a></h4>
               <p class="products_item-text">Крем-брюле с черничным джемом</p>
               <div class="products_item-price-block">
@@ -383,7 +390,7 @@
 
           <li class="products_item">
             <div class="products_item-block">
-              <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_bubblegum.png"></a>
+              <a class="products_item-link" href="#"><img class="products_item-foto" src="./img/scoop_bubblegum.png" width="168" height="168" alt="scoop bubblegum"></a>
               <h4 class="products_item-title"><a class="products_item-link" href="#">Бабл-гам</a></h4>
               <p class="products_item-text">Ванильный пломбир со сладкой посыпкой</p>
               <div class="products_item-price-block">
@@ -440,6 +447,7 @@
         <article class="article-blog">
           <p class="article-anons">Новое в нашем блоге</p>
           <h3 class="article-title">10 способов сервировки фруктовых щербетов к столу</h3>
+		  <img src="./img/news_background.png" height="224" alt="foto of table appointments">
         </article>
 
         <form class="form_subscribe" action="https://echo.htmlacademy.ru/courses" method="get">
