@@ -7,7 +7,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": "active",
   "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
+  "files.": true,
   "files.trimTrailingWhitespace": true,
   "css.format.spaceAroundSelectorSeparator": true,
   "css.lint.compatibleVendorPrefixes": "warning",

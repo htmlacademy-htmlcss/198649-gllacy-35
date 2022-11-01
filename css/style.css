@@ -25,7 +25,7 @@
 body {
     color: #2D3440;
     max-width: 1366px;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -39,7 +39,29 @@ body {
 
 /* all links */
 
-a {
+.logo_main-page,
+.nav-catalog_link,
+.nav_link,
+.nav_telefono,
+.nav_search,
+.nav_log-in,
+.user-cabinet_link,
+.user-new-password_link,
+.user-registration_link,
+.nav_basket,
+.pop-up_basket-link-order,
+.slider_link-order,
+.block_raspberry-link,
+.block_marshmello-link,
+.products_item-link,
+.footer_link-for-distributor,
+.footer_link-production,
+.footer_link-documents,
+.footer_link-eco-standarts,
+.footer_copyright-link,
+.breadcrumbs_main,
+.breadcrumbs_catalog,
+.breadcrumbs_catalog-creamy {
     text-decoration: none;
     color: #2D3440;
 }
@@ -47,35 +69,59 @@ a {
 
 /* titles */
 
-h2 {
+.slider_title,
+.shares_title,
+.benefits_motivation,
+.products_title,
+.delivery_title,
+.creamy_ice-cream {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
 }
 
-h3 {
+.block_raspberry-title,
+.block_marshmello-title,
+.article-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 }
 
-h4 {
+.products_item-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px
 }
 
 
-/* p all */
+/* p */
 
-p {
+.products_item-text,
+.benefits_item-text,
+.article-anons,
+.form_subscribe-text,
+.delivery_text,
+.delivery_form-text,
+.locatio_text {
     color: #565C66;
 }
 
 
-/* ul all */
+/* ul*/
 
-ul {
+.nav_list,
+.catalog-list,
+.nav_list,
+.navigation_user,
+.pop-up_basket-list,
+.slider_small-foto-list,
+.slider_social-list,
+.products_list,
+.benefits_list,
+.footer_social-list,
+.footer-links_list,
+.catalog_navigation-list {
     list-style: none;
 }
 
